@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Job - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+        
+        .job-card {
+            transition: all 0.3s ease;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white text-2xl font-bold">Q</div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight text-gray-900">Quick Job</h1>
+                    <p class="text-xs text-gray-500 -mt-1">Find your next role fast</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Browse Jobs</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Companies</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">For Employers</a>
+            </nav>
+            
+            <div class="flex items-center gap-3">
+                <button onclick="alert('Login feature coming soon!')" 
+                        class="px-5 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-full transition-colors">
+                    Log in
+                </button>
+                <button onclick="alert('Sign up feature coming soon!')" 
+                        class="px-5 py-2 text-sm font-medium bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
+                    Post a Job
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        New Opening
+                    </div>
+                    <h2 class="text-5xl font-bold leading-tight mb-4">
+                        Software Developer
+                    </h2>
+                    <div class="flex items-center gap-6 text-lg">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Full-time</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote / Hybrid</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-clock"></i>
+                            <span>Posted today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <!-- Job Details -->
+            <div class="lg:col-span-2 space-y-10">
+                <div class="bg-white rounded-3xl shadow p-8 job-card">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-info-circle text-blue-600"></i>
+                        Job Description
+                    </h3>
+                    <div class="prose prose-gray max-w-none">
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            We are looking for a passionate and skilled Software Developer to join our growing team. 
+                            You will be responsible for developing and maintaining high-quality web and mobile applications.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-3">Responsibilities</h4>
+                                <ul class="space-y-3 text-gray-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Build scalable web applications
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Collaborate with cross-functional teams
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Write clean, maintainable code
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Debug and resolve technical issues
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-3">Requirements</h4>
+                                <ul class="space-y-3 text-gray-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        2+ years of experience in software development
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Proficiency in JavaScript, React, and Node.js
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Experience with databases (SQL/NoSQL)
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        Strong problem-solving skills
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefits -->
+                <div class="bg-white rounded-3xl shadow p-8 job-card">
+                    <h3 class="text-2xl font-semibold mb-6">Why Join Us?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Competitive Salary</p>
+                                <p class="text-sm text-gray-500">$90k - $130k / year</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Flexible Work</p>
+                                <p class="text-sm text-gray-500">Remote-friendly with unlimited PTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-8">
+                <!-- Application Card -->
+                <div class="bg-white rounded-3xl shadow p-8 sticky top-8 job-card">
+                    <h3 class="font-semibold text-xl mb-6">Apply Now</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" 
+                                   class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:border-blue-500 transition-colors"
+                                   placeholder="John Doe">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" 
+                                   class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:border-blue-500 transition-colors"
+                                   placeholder="you@example.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" 
+                                   class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:border-blue-500 transition-colors"
+                                   placeholder="+1 (555) 123-4567">
+                        </div>
+                        
+                        <button onclick="submitApplication()" 
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-2xl transition-all flex items-center justify-center gap-2 text-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Application
+                        </button>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t text-center">
+                        <p class="text-xs text-gray-500">Or contact directly:</p>
+                        <div class="mt-4 flex flex-col gap-3">
+                            <a href="tel:+13031234517" 
+                               class="flex items-center justify-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-phone"></i>
+                                <span class="font-medium">+1 (303) 123-4517</span>
+                            </a>
+                            <a href="mailto:nirmansasmitha583@gmail.com" 
+                               class="flex items-center justify-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope"></i>
+                                <span class="font-medium text-sm break-all">nirmansasmitha583@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Info -->
+                <div class="bg-white rounded-3xl p-6 text-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-xl font-bold">QD</div>
+                        <div>
+                            <p class="font-semibold">QuickDev Solutions</p>
+                            <p class="text-gray-500 text-xs">Technology • 45 employees</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-xs text-gray-500 space-y-1">
+                        <div class="flex justify-between">
+                            <span>Job Type</span>
+                            <span class="font-medium text-gray-700">Full-time</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Experience Level</span>
+                            <span class="font-medium text-gray-700">Mid-Level</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Location</span>
+                            <span class="font-medium text-gray-700">Remote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="w-8 h-8 bg-white rounded-2xl flex items-center justify-center text-blue-600 font-bold">Q</div>
+                <span class="text-white text-xl font-semibold">Quick Job</span>
+            </div>
+            <p class="text-sm">Connecting talent with opportunities faster than ever.</p>
+            <p class="text-xs mt-8 opacity-50">© 2026 Quick Job. Demo Application.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitApplication() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            
+            if (!name || !email) {
+                alert("Please fill in your name and email address.");
+                return;
+            }
+            
+            // Simulate application submission
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Submitting...`;
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                alert(`✅ Application submitted successfully!\n\nThank you, ${name}!\n\nOur team will contact you shortly at ${email}.`);
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                
+                // Clear form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+            }, 1500);
+        }
+        
+        // Tailwind script already included via CDN
+        console.log('%cQuick Job - Software Developer page loaded successfully!', 'color: #3b82f6; font-weight: bold');
+    </script>
+</body>
+</html>
